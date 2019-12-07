@@ -1,11 +1,7 @@
 package application.model;
 
-import java.time.LocalDate;
-
 import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
@@ -23,13 +19,12 @@ public class Person {
 
 	public Person(String name) {
 		this.name=new SimpleStringProperty(name);
-
 		// 테스트용 더미데이터.
-		this.SID = new SimpleStringProperty("2017E7443");
-		this.major = new SimpleStringProperty("CS");
-		this.majorScore = new SimpleIntegerProperty(80);
-		this.liberalScore = new SimpleIntegerProperty(76);
-		this.crnafScore = new SimpleIntegerProperty(92);
+		this.SID = new SimpleStringProperty("");
+		this.major = new SimpleStringProperty("");
+		this.majorScore = new SimpleIntegerProperty(0);
+		this.liberalScore = new SimpleIntegerProperty(0);
+		this.crnafScore = new SimpleIntegerProperty(0);
 	}
 
 
@@ -79,7 +74,12 @@ public class Person {
 	public void setCrnafScore(Integer crnafScore) {
 		this.crnafScore.set(crnafScore);
 	}
-
+	public int getTotalScore(){
+		return this.getMajorScore()+this.getLiberalScore()+this.getCrnafScore();
+	}
+	public double getAverageScore(){
+		return this.getTotalScore()/(double)3;
+	}
 
 	public StringProperty nameProperty() {
 		return name;

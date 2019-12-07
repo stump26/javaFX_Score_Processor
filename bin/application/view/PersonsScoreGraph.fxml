@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.PersonScoreStatisticController">
+   <children>
+      <BarChart fx:id="barChart" layoutY="41.0" prefHeight="359.0" prefWidth="501.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis prefHeight="333.0" prefWidth="30.0" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label fx:id="graphTitleLabel" layoutX="242.0" layoutY="20.0" text="Label" />
+      <Button fx:id="closeBtn" layoutX="520.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleOnClickCloseStatistic" prefHeight="37.0" prefWidth="92.0" text="Close" />
+      <ChoiceBox fx:id="categoryBox" layoutX="520.0" layoutY="16.0" onInputMethodTextChanged="#handleOnChangeCategory" prefHeight="23.0" prefWidth="92.0" />
+   </children>
+</AnchorPane>

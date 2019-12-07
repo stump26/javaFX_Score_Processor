@@ -28,7 +28,10 @@ public class PersonOverviewController {
     private Label liberalScoreLabel;
     @FXML
     private Label crnafScoreLabel;
-
+    @FXML
+    private Label totalScoreSumLabel;
+    @FXML
+    private Label averageScoreLabel;
 
     // 메인 application ref
     private MainApp mainApp;
@@ -134,6 +137,8 @@ public class PersonOverviewController {
             majorScoreLabel.setText(Integer.toString(person.getMajorScore()));
             liberalScoreLabel.setText(Integer.toString(person.getLiberalScore()));
             crnafScoreLabel.setText(Integer.toString(person.getCrnafScore()));
+            totalScoreSumLabel.setText(Integer.toString(person.getTotalScore()));
+            averageScoreLabel.setText(String.format("%.2f",person.getAverageScore()));
         } else {
             //person이 null이면 모든 텍스트를 지운다.
             nameLabel.setText("");
@@ -142,6 +147,8 @@ public class PersonOverviewController {
             majorScoreLabel.setText(Integer.toString(0));
             liberalScoreLabel.setText(Integer.toString(0));
             crnafScoreLabel.setText(Integer.toString(0));
+            totalScoreSumLabel.setText(Integer.toString(0));
+            averageScoreLabel.setText(Double.toString(0));
         }
     }
 }
