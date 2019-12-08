@@ -22,12 +22,21 @@ public class PersonOverviewController {
     private Label SIDLabel;
     @FXML
     private Label majorLabel;
+
     @FXML
     private Label majorScoreLabel;
     @FXML
     private Label liberalScoreLabel;
     @FXML
     private Label crnafScoreLabel;
+
+    @FXML
+    private Label majorGradeLabel;
+    @FXML
+    private Label liberalGradeLabel;
+    @FXML
+    private Label crnafGradeLabel;
+
     @FXML
     private Label totalScoreSumLabel;
     @FXML
@@ -137,6 +146,9 @@ public class PersonOverviewController {
             majorScoreLabel.setText(Integer.toString(person.getMajorScore()));
             liberalScoreLabel.setText(Integer.toString(person.getLiberalScore()));
             crnafScoreLabel.setText(Integer.toString(person.getCrnafScore()));
+            majorGradeLabel.setText(Character.toString(person.getMajorGrade()));
+            liberalGradeLabel.setText(Character.toString(person.getLiberalGrade()));
+            crnafGradeLabel.setText(Character.toString(person.getCrnafGrade()));
             totalScoreSumLabel.setText(Integer.toString(person.getTotalScore()));
             averageScoreLabel.setText(String.format("%.2f",person.getAverageScore()));
         } else {
@@ -147,6 +159,9 @@ public class PersonOverviewController {
             majorScoreLabel.setText(Integer.toString(0));
             liberalScoreLabel.setText(Integer.toString(0));
             crnafScoreLabel.setText(Integer.toString(0));
+            majorGradeLabel.setText("-");
+            liberalGradeLabel.setText("-");
+            crnafGradeLabel.setText("-");
             totalScoreSumLabel.setText(Integer.toString(0));
             averageScoreLabel.setText(Double.toString(0));
         }

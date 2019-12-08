@@ -114,4 +114,8 @@ public class RootLayoutController {
     private void handleShowScoreStatistics(){
         mainApp.showScoreStatistics();
     }
+    @FXML
+    private void handleShowRankingStatistics(){
+        mainApp.showRankingStatistics();
+    }
 }

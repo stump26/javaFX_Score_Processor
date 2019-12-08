@@ -25,6 +25,7 @@
           </Menu>
             <Menu mnemonicParsing="false" text="Statistics">
                <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleShowRankingStatistics" text="Show Ranking" />
                   <MenuItem mnemonicParsing="false" onAction="#handleShowScoreStatistics" text="Show Graphs" />
                </items>
             </Menu>

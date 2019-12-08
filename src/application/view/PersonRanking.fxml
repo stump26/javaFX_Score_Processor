@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import java.util.ArrayList?>
+<AnchorPane prefHeight="400.0" prefWidth="273.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.PersonRankingController">
+   <children>
+      <GridPane layoutX="47.0" layoutY="22.0" prefHeight="357.0" prefWidth="180.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="7.0" prefWidth="22.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="147.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="1." />
+            <Label text="2." GridPane.rowIndex="1" />
+            <Label text="3." GridPane.rowIndex="2" />
+            <Label text="4." GridPane.rowIndex="3" />
+            <Label text="5." GridPane.rowIndex="4" />
+            <Label text="6." GridPane.rowIndex="5" />
+            <Label text="7." GridPane.rowIndex="6" />
+            <Label text="8." GridPane.rowIndex="7" />
+            <Label text="9." GridPane.rowIndex="8" />
+            <Label text="10." GridPane.rowIndex="9" />
+            <TextField fx:id="tier1Field" editable="false" prefHeight="23.0" prefWidth="116.0" GridPane.columnIndex="1" />
+            <TextField fx:id="tier2Field" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tier3Field" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tier4Field" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tier5Field" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tier6Field" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tier7Field" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="tier8Field" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="tier9Field" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="tier10Field" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+
+            <fx:define>
+                <ArrayList fx:id="tierTextFieldList">
+                    <fx:reference source="tier1Field" />
+                    <fx:reference source="tier2Field" />
+                    <fx:reference source="tier3Field" />
+                    <fx:reference source="tier4Field" />
+                    <fx:reference source="tier5Field" />
+                    <fx:reference source="tier6Field" />
+                    <fx:reference source="tier7Field" />
+                    <fx:reference source="tier8Field" />
+                    <fx:reference source="tier9Field" />
+                    <fx:reference source="tier10Field" />
+                </ArrayList>
+            </fx:define>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

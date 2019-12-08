@@ -80,6 +80,25 @@ public class Person {
 	public double getAverageScore(){
 		return this.getTotalScore()/(double)3;
 	}
+	public char getGrade(int scoreTen){
+		switch (scoreTen){
+			case 10:
+			case 9: return 'A';
+			case 8:	return 'B';
+			case 7:
+			case 6: return 'C';
+			case 5: return 'D';
+			default: return 'F';
+		}
+	}
+	public char getMajorGrade() {
+		return getGrade((int)getMajorScore()/10);
+	}
+	public char getLiberalGrade() {
+		return getGrade((int)getLiberalScore()/10);
+	}public char getCrnafGrade() {
+		return getGrade((int)getCrnafScore()/10);
+	}
 
 	public StringProperty nameProperty() {
 		return name;

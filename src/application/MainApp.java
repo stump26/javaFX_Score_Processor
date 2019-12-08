@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.prefs.Preferences;
 
+import application.view.*;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -17,10 +18,6 @@ import javafx.stage.Stage;
 
 import application.model.Person;
 import application.model.PersonListWrapper;
-import application.view.RootLayoutController;
-import application.view.PersonOverviewController;
-import application.view.PersonEditDialogController;
-import application.view.PersonScoreStatisticController;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
@@ -271,6 +268,31 @@ public class MainApp extends Application {
             controller.setPersonData(personData);
 
             dialogStage.show();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 성적 순위를 보여주는 다이어로그.
+     */
+    public void showRankingStatistics(){
+        try{
+            // FXML 파일을불러와 팝업의 새로운 Stage를 생성.
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainApp.class.getResource("view/PersonRanking.fxml"));
+            AnchorPane rankingPage = (AnchorPane) loader.load();
+            Stage rankingDialogStage = new Stage();
+            rankingDialogStage.setTitle("Ranking Statistics");
+            rankingDialogStage.initModality(Modality.WINDOW_MODAL);
+            rankingDialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(rankingPage);
+            rankingDialogStage.setScene(scene);
+            //person을 컨트롤러에 설정.
+            PersonRankingController controller = loader.getController();
+            controller.setPersonData(personData);
+
+            rankingDialogStage.show();
         }catch (IOException e){
             e.printStackTrace();
         }
