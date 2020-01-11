@@ -37,10 +37,6 @@ public class MainApp extends Application {
         personData.add(new Person("Kim"));
         personData.add(new Person("Choi"));
         personData.add(new Person("Seok"));
-        personData.add(new Person("Yoo"));
-        personData.add(new Person("Lee"));
-        personData.add(new Person("shin"));
-        personData.add(new Person("Cha"));
     }
 
     public ObservableList<Person> getPersonData() {
@@ -90,12 +86,10 @@ public class MainApp extends Application {
      */
     public void showPersonOverview() {
         try {
-            // 연락처 요약을 가져온다.
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(MainApp.class.getResource("view/PersonOverview.fxml"));
             AnchorPane personOverview = (AnchorPane) loader.load();
 
-            // 연락처 요약을 상위 레이아웃 가운데로 설정한다.
             rootLayout.setCenter(personOverview);
 
             // 메인 애플리케이션이 컨트롤러를 이용할 수 있게 한다.

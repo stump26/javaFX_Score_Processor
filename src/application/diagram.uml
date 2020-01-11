@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="1024.875" y="259.0">application.view.PersonOverviewController</node>
+    <node x="778.6112040133779" y="0.0">application.model.Person</node>
+    <node x="843.0917642140469" y="829.0">application.MainApp</node>
+    <node x="992.6542642140467" y="685.0">application.view.RootLayoutController</node>
+    <node x="0.0" y="420.0">application.model.PersonListWrapper</node>
+    <node x="719.0" y="432.5">application.view.avgScoreSorter</node>
+    <node x="433.0" y="282.0">application.view.PersonScoreStatisticController</node>
+    <node x="726.75" y="685.0">application.view.PersonRankingController</node>
+    <node x="185.0" y="328.0">application.view.PersonEditDialogController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="application.view.PersonEditDialogController" target="application.model.Person">
+      <point x="-57.0" y="-119.0" />
+      <point x="242.0" y="209.0" />
+      <point x="815.5342809364548" y="209.0" />
+      <point x="-59.076923076923094" y="84.5" />
+    </edge>
+    <edge source="application.MainApp" target="application.model.Person">
+      <point x="-8.5" y="-50.0" />
+      <point x="953.5917642140469" y="809.0" />
+      <point x="959.25" y="809.0" />
+      <point x="959.25" y="229.0" />
+      <point x="904.1496655518395" y="229.0" />
+      <point x="29.538461538461547" y="84.5" />
+    </edge>
+    <edge source="application.MainApp" target="application.view.PersonRankingController">
+      <point x="-42.5" y="-50.0" />
+      <point x="919.5917642140469" y="769.0" />
+      <point x="832.25" y="769.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="application.view.PersonScoreStatisticController" target="application.model.Person">
+      <point x="0.0" y="-165.0" />
+      <point x="566.0" y="229.0" />
+      <point x="845.0727424749164" y="229.0" />
+      <point x="-29.538461538461547" y="84.5" />
+    </edge>
+    <edge source="application.MainApp" target="application.view.RootLayoutController">
+      <point x="25.5" y="-50.0" />
+      <point x="987.5917642140469" y="759.0" />
+      <point x="1023.6542642140467" y="759.0" />
+      <point x="-62.0" y="27.0" />
+    </edge>
+    <edge source="application.view.RootLayoutController" target="application.view.PersonOverviewController">
+      <point x="0.0" y="-27.0" />
+      <point x="1085.6542642140466" y="660.0" />
+      <point x="1060.25" y="660.0" />
+      <point x="-106.125" y="188.0" />
+    </edge>
+    <edge source="application.MainApp" target="application.view.PersonOverviewController">
+      <point x="110.5" y="-50.0" />
+      <point x="1072.5917642140469" y="809.0" />
+      <point x="1211.1542642140466" y="809.0" />
+      <point x="1211.1542642140466" y="660.0" />
+      <point x="1272.5" y="660.0" />
+      <point x="106.125" y="188.0" />
+    </edge>
+    <edge source="application.view.PersonOverviewController" target="application.MainApp">
+      <point x="35.375" y="188.0" />
+      <point x="1201.75" y="660.0" />
+      <point x="1200.1542642140466" y="660.0" />
+      <point x="1200.1542642140466" y="799.0" />
+      <point x="1055.5917642140469" y="799.0" />
+      <point x="93.5" y="-50.0" />
+    </edge>
+    <edge source="application.model.PersonListWrapper" target="application.model.Person">
+      <point x="-41.25" y="-27.0" />
+      <point x="41.25" y="189.0" />
+      <point x="785.9958193979933" y="189.0" />
+      <point x="-88.61538461538464" y="84.5" />
+    </edge>
+    <edge source="application.view.PersonRankingController" target="application.view.avgScoreSorter">
+      <point x="-52.75" y="-27.0" />
+      <point x="779.5" y="660.0" />
+      <point x="791.0" y="660.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="application.MainApp" target="application.view.PersonEditDialogController">
+      <point x="-76.5" y="-50.0" />
+      <point x="885.5917642140469" y="789.0" />
+      <point x="299.0" y="789.0" />
+      <point x="0.0" y="119.0" />
+    </edge>
+    <edge source="application.MainApp" target="application.view.PersonScoreStatisticController">
+      <point x="-59.5" y="-50.0" />
+      <point x="902.5917642140469" y="779.0" />
+      <point x="566.0" y="779.0" />
+      <point x="0.0" y="165.0" />
+    </edge>
+    <edge source="application.view.PersonOverviewController" target="application.model.Person">
+      <point x="94.33333333333331" y="-188.0" />
+      <point x="1260.7083333333333" y="189.0" />
+      <point x="963.2265886287626" y="189.0" />
+      <point x="88.61538461538464" y="84.5" />
+    </edge>
+    <edge source="application.view.RootLayoutController" target="application.MainApp">
+      <point x="62.0" y="27.0" />
+      <point x="1147.6542642140466" y="779.0" />
+      <point x="1021.5917642140469" y="779.0" />
+      <point x="59.5" y="-50.0" />
+    </edge>
+    <edge source="application.view.PersonRankingController" target="application.model.Person">
+      <point x="52.75" y="-27.0" />
+      <point x="885.0" y="660.0" />
+      <point x="873.5" y="660.0" />
+      <point x="873.5" y="239.0" />
+      <point x="874.6112040133779" y="239.0" />
+      <point x="0.0" y="84.5" />
+    </edge>
+    <edge source="application.view.avgScoreSorter" target="application.model.Person">
+      <point x="0.0" y="-14.5" />
+      <point x="791.0" y="239.0" />
+      <point x="859.8419732441472" y="239.0" />
+      <point x="-14.769230769230774" y="84.5" />
+    </edge>
+    <edge source="application.MainApp" target="application.model.PersonListWrapper">
+      <point x="-110.5" y="-50.0" />
+      <point x="851.5917642140469" y="809.0" />
+      <point x="75.45296822742466" y="809.0" />
+      <point x="75.45296822742466" y="660.0" />
+      <point x="41.25" y="660.0" />
+      <point x="-41.25" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6691560866318148" x="588.5" y="659.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
